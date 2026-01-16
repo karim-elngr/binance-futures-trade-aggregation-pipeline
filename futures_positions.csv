@@ -1,0 +1,3 @@
+status,symbol,positionSide,direction,open_time,close_time,duration_min,max_position_qty,entry_qty,entry_vwap,realizedPnl,commission,net_pnl_after_fees,fills,net_qty
+OPEN,BTCUSDT,LONG,LONG,2026-01-16 09:10:17.000,,,0.313,0.313,95697.9,0.0,14.97672135,-14.97672135,1.0,0.313
+OPEN,CLOUSDT,LONG,LONG,2026-01-16 12:32:23.584,,,7410.0,7410.0,0.6606873009446693,0.0,2.4478464100000004,-2.4478464100000004,49.0,7410.0
