@@ -49,6 +49,7 @@ def write_fills_csv(new_trades: List[Dict]) -> int:
         try:
             df_existing = pd.read_csv(config.FILLS_CSV)
             df_existing['id'] = pd.to_numeric(df_existing['id'], errors='coerce')
+            df_existing['time'] = pd.to_datetime(df_existing['time'])
             # Deduplicate by trade id (keeps only first occurrence)
             combined_df = pd.concat([df_existing, df_new]).drop_duplicates(subset=['id'], keep='first').reset_index(drop=True)
             logger.info(f"Combined with {len(df_existing)} existing fills")
